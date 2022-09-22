@@ -60,41 +60,35 @@ if (isset($_POST['ubah'])) {
       <tr>
         <td>
           <label>
-            Judul Buku :
             <input type="text" name="judul_buku" id="judul_buku" required value="<?= $bk['judul_buku'];?>"> 
           </label>
         </td>
 
         <td>
           <label>
-          pengarang Buku :
             <input type="text" name="pengarang_buku" id="pengarang_buku" required value="<?= $bk['pengarang_buku'];?>">   
           </label>
         </td>
 
         <td>
           <label>
-          Jumlah Baca :
             <input type="text" name="jumlah_baca" id="jumlah_baca" required value="<?= $bk['jumlah_baca'];?>"> 
           </label>
         </td>
          
         <td>
           <label>
-          Rating :
             <input type="text" name="rating_buku" id="rating_buku" required value="<?= $bk['rating_buku'];?>"> 
           </label>
         </td> 
         <td>
           <label>
-          genre :
             <input type="text" name="genre" id="genre" required value="<?= $bk['genre'];?>"> 
           </label>
         </td> 
 
         <td>
           <label>
-            img :
             <input type="text" name="img" id="img" required value="<?= $bk['img'];?>"> 
           </label>
         </td>
