@@ -19,19 +19,21 @@ $buku = query("SELECT * FROM buku");
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-<!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <link rel="stylesheet" href="../style/styleA.css">
 
 <title>Buku Jaya Abadi Selamanya</title>
-<style>
-  body{
-    padding: 10px;
-  }
-</style>
+
 </head>
 <body>
   <h1>Daftar Buku</h1>
+  <div class="div">
   <a href="tambah.php" class="waves-effect   green accent-4 btn">Tambah</a>
+  <a href="../index.php" class="kembali waves-effect   blue accent-2 btn">kembali</a>
+  </div>
+  <br>
   <table class="striped">
     <tr>
       <th>no</th>
@@ -58,7 +60,7 @@ $buku = query("SELECT * FROM buku");
         <td>
           <a href="hapus.php?id=<?= $bk['id']; ?>" onclick="return confirm ('apakah anda yakin akan menghapus buku ?');" class="waves-effect  red accent-4 btn">Hapus</a>
           <br>
-          <a href="ubah.php?id=<?= $bk['id']; ?>" class="waves-effect  orange darken-2 btn">Update</a>
+          <a href="ubah.php?id=<?= $bk['id']; ?>" class="waves-effect orange darken-2 btn">Update</a>
          </td>
         </div>
       </tr>

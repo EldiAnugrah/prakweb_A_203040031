@@ -38,6 +38,8 @@ if (isset($_POST['ubah'])) {
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+<link rel="stylesheet" href="../style/styleB.css">
+
 </head>
 
 <body>
@@ -96,8 +98,10 @@ if (isset($_POST['ubah'])) {
       </tr>
   
   </table>
-          <button class="waves-effect  orange darken-2 btn" type="submit" name="ubah" onclick="return confirm ('apakah anda yakin akan mengubah buku ?');"> ubah data</button>
-
+      <div class="button">
+       <button class="waves-effect  orange darken-2 btn" type="submit" name="ubah" onclick="return confirm ('apakah anda yakin akan mengubah buku ?');"> ubah data</button>
+       <a href="admin.php" class="kembali waves-effect   blue accent-2 btn">kembali</a>
+       </div>
       </ul>
 
     </form>

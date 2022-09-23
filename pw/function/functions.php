@@ -58,7 +58,7 @@ function ubah($data)
 
   $id = $data['id'];
   $judul_buku = htmlspecialchars($data['judul_buku']);
-  $pengarang_buku = htmlspecialchars($data['jumlah_baca']);
+  $pengarang_buku = htmlspecialchars($data['pengarang_buku']);
   $jumlah_baca = htmlspecialchars($data['jumlah_baca']);
   $rating_buku = htmlspecialchars($data['rating_buku']);
   $img = htmlspecialchars($data['img']);

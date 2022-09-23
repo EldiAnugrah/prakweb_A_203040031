@@ -33,6 +33,8 @@ if (isset($_POST['tambah'])) {
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+<link rel="stylesheet" href="../style/styleB.css">
+
 </head>
 
 <body>
@@ -88,7 +90,10 @@ if (isset($_POST['tambah'])) {
       </tr>
   
   </table>
+      <div class="button">
           <button class="waves-effect   green accent-4 btn" type="submit" name="tambah" onclick="return confirm ('apakah anda yakin akan menambah buku ?');"> Tambah data</button>
+          <a href="admin.php" class="kembali waves-effect   blue accent-2 btn">kembali</a>
+      </div>    
     </form>
     <script src="../js/script.js"></script>
 </body>
