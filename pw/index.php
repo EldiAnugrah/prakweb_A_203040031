@@ -52,8 +52,10 @@
                   <img height="430"; src="img/<?= $bk['img']; ?>">
                   </div>
                   <div class="card-content">
+                    <div class="button">
                     <p style="color: black;"> <span style="font-weight: bold;"> <?= $bk["judul_buku"]; ?> </span> </p>
                     <p style="color: #26a69a;"> <span style="font-weight: bold; font-color: blue;"> <?= $bk["pengarang_buku"]; ?></p> </span> 
+                    </div>
                   </div>
                 </div>
               </div>

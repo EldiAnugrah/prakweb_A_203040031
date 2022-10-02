@@ -68,4 +68,3 @@ $buku = query("SELECT * FROM buku");
   </table>
 </body>
 </html>
-
