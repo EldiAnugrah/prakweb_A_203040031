@@ -9,24 +9,20 @@
  -->
  <?php
 
-use produk as GlobalProduk;
+
 
   class Produk {
     public $judul ,
            $penulis ,
            $penerbit ,
-           $harga,
-           $jmlHalaman,
-           $jmMain;
+           $harga;
 
-    public function __construct($judul = "judul",$penulis = "penulis",$penerbit = "penerbit",$harga = 0,
-                                $jmlHalaman = 0, $jmMain = 0) { //alasan pakai _ _ karena bagian dari magic method yang ada di php 
+    public function __construct($judul = "judul",$penulis = "penulis",$penerbit = "penerbit",$harga = 0) //alasan pakai _ _ karena bagian dari magic method yang ada di php 
+    { 
       $this->judul = $judul;
       $this->penulis = $penulis;
       $this->penerbit = $penerbit;
       $this->harga = $harga;
-      $this->jmlHalaman = $jmlHalaman;
-      $this->jmMain = $jmMain;
 
     }
        
@@ -36,7 +32,7 @@ use produk as GlobalProduk;
 
     public function getInfoProduk(){
       // komik : Masashi, Shonen Jump -.- 100 halaman 
-      $str = "{$this->tipe} : {$this->judul} | {$this->getLabel()} |(Rp.{$this->harga})"; 
+      $str = "{$this->judul} | {$this->getLabel()} |(Rp.{$this->harga})"; 
      
       return $str; 
     }
@@ -44,15 +40,36 @@ use produk as GlobalProduk;
   }
 
   class komik extends produk{
+    public $jmlHalaman;
+
+    public function __construct($judul = "judul",$penulis = "penulis",$penerbit = "penerbit",$harga = 0,
+    $jmlHalaman = 0)
+    {
+      parent::__construct($judul,$penulis,$penerbit,$harga);
+
+      $this->jmlHalaman = $jmlHalaman;
+    }
+    
     public function getInfoProduk(){
-      $str = "komik : {$this->judul} | {$this->getLabel()} |(Rp.{$this->harga}) - {$this->jmlHalaman} Halaman.";
+      $str = "komik : ".parent::getInfoProduk()."  - {$this->jmlHalaman} Halaman.";
       return $str; 
     }
   }
 
   class game extends produk{
+    public $jmMain;
+
+    public function __construct($judul = "judul",$penulis = "penulis",$penerbit = "penerbit",$harga = 0,
+    $jmMain = 0)
+    {
+      parent::__construct($judul,$penulis,$penerbit,$harga);
+
+      $this->jmlHalaman = $jmMain;
+    }
+    
+    
     public function getInfoProduk(){
-      $str = "game : {$this->judul} | {$this->getLabel()} |(Rp.{$this->harga}) - {$this->jmMain} Jam.";
+      $str = "game :  ".parent::getInfoProduk()." ~ {$this->jmMain} Jam.";
       return $str; 
     }
   }
@@ -64,8 +81,8 @@ use produk as GlobalProduk;
       return $str;
     }
   }
-    $produk1 = new komik("Naruto","Masashi","Shonen Jump",30000,100,0); 
-    $produk2 = new game("Uncharted","Neil Durkmann","Sony Computer",25000,0,50);
+    $produk1 = new komik("Naruto","Masashi","Shonen Jump",30000,100); 
+    $produk2 = new game("Uncharted","Neil Durkmann","Sony Computer",25000,50);
 
     // komik : Masashi, Shonen Jump
     // game : Neil Durkmann, Sony Computer
