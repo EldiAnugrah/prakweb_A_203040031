@@ -12,7 +12,7 @@
            $penerbit ,
            $harga;
 
-    public function __construct($judul = "judul",$penulis = "penulis",$penerbit = "penerbit",$harga = "haarga") { //alasan pakai _ _ karena bagian dari magic method yang ada di php 
+    public function __construct($judul = "judul",$penulis = "penulis",$penerbit = "penerbit",$harga = 0) { //alasan pakai _ _ karena bagian dari magic method yang ada di php 
       $this->judul = $judul;
       $this->penulis = $penulis;
       $this->penerbit = $penerbit;

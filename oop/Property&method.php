@@ -8,24 +8,24 @@ contoh  -->
 
 <?php 
 
-  class mobil {
-    public $nama,
-    public $merk,
-    public $warna,
-    public $KecepetanMaksimal,
-    public $jumlahPenumpang;
+  // class mobil {
+  //   public $nama,
+  //   public $merk,
+  //   public $warna,
+  //   public $KecepetanMaksimal,
+  //   public $jumlahPenumpang;
 
-    public function tambahKecepatan(){
+  //   public function tambahKecepatan(){
 
-    }
-    public function kurangKecepatan(){
+  //   }
+  //   public function kurangKecepatan(){
       
-    }
-    public function gantiTransmisi(){
+  //   }
+  //   public function gantiTransmisi(){
       
-    }
+  //   }
 
-  }
+  // }
 
 ?>
 
