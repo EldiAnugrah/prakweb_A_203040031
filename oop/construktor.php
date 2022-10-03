@@ -1,6 +1,6 @@
 <!-- 
   kustruktor adalah sebuah method khusus yang ada dalam sebuah kelas karena akan otomatis dijalankan ketika 
-  sebuah kelas di instansiasi/dibuat keasnya 
+  sebuah kelas diinstansiasi/dibuat kelasnya 
 
  -->
 
