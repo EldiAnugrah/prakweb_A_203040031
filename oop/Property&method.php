@@ -6,6 +6,29 @@ cara penulisannya sama seperti property
 
 contoh  -->
 
+<?php 
+
+  class mobil {
+    public $nama,
+    public $merk,
+    public $warna,
+    public $KecepetanMaksimal,
+    public $jumlahPenumpang;
+
+    public function tambahKecepatan(){
+
+    }
+    public function kurangKecepatan(){
+      
+    }
+    public function gantiTransmisi(){
+      
+    }
+
+  }
+
+?>
+
 
 <?php 
   class produk {
@@ -43,8 +66,8 @@ contoh  -->
     $produk3->penerbit = "Sony Computer";
     $produk3->harga = 25000;
 
-    echo "komik : "  $produk3->getLabel();
+    echo "komik : " . $produk3->getLabel();
     echo "<br>";
-    echo "game : "  $produk3->getLabel();
+    echo "game : " . $produk3->getLabel();
 
 ?>
