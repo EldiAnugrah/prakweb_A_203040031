@@ -9,7 +9,7 @@
  -->
  <?php
 
-
+use produk as GlobalProduk;
 
   class Produk {
     public $judul ,
