@@ -1,5 +1,5 @@
 <?php 
-
+//video 4
 require_once '../app/init.php';//bootstraping
 
 $app = new App;
