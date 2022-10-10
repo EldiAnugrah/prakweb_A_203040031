@@ -1,4 +1,7 @@
 <?php 
+if (!session_id()) {
+  session_start();
+}
 //video 5 
 require_once '../app/init.php';//bootstraping
 
